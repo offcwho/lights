@@ -1,0 +1,1 @@
+export { TrendsUi as Trends } from "./ui/trends.ui";

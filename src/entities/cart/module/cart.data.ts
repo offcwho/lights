@@ -1,0 +1,38 @@
+export const CartData = [
+    {
+        id: 1,
+        name: "Lorem ipsum dolor sit amet",
+        description: "adasdasasssssssssssssssssssssssssssssssssssssssadasdasda",
+        image: "https://media.discordapp.net/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d&=&format=webp&quality=lossless&width=1200&height=960",
+        cost: 24242,
+        count: 2,
+        checked: false,
+    },
+    {
+        id: 2,
+        name: "Lorem ipsum dolor sit amet",
+        description: "adasdasasssssssssssssssssssssssssssssssssssssssadasdasda",
+        image: "https://media.discordapp.net/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d&=&format=webp&quality=lossless&width=1200&height=960",
+        cost: 24242,
+        count: 3,
+        checked: false,
+    },
+    {
+        id: 3,
+        name: "Lorem ipsum dolor sit amet",
+        description: "adasdasasssssssssssssssssssssssssssssssssssssssadasdasda",
+        image: "https://media.discordapp.net/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d&=&format=webp&quality=lossless&width=1200&height=960",
+        cost: 24242,
+        count: 4,
+        checked: false,
+    },
+    {
+        id: 4,
+        name: "Lorem ipsum dolor sit amet",
+        description: "adasdasasssssssssssssssssssssssssssssssssssssssadasdasda",
+        image: "https://media.discordapp.net/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d&=&format=webp&quality=lossless&width=1200&height=960",
+        cost: 24242,
+        count: 5,
+        checked: false,
+    },
+]

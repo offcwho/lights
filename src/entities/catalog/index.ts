@@ -1,0 +1,1 @@
+export { CatalogUi as Catalog } from "./ui/catalog.ui";
