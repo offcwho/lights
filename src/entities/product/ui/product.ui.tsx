@@ -67,7 +67,7 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                             variants={itemVariants}
                             className="px-3 py-1 bg-[#006C49]/10 text-[#006C49] rounded-full text-sm"
                         >
-                            {data.tag || "New"}
+                            {"New"}
                         </motion.div>
                         <motion.button
                             variants={itemVariants}
