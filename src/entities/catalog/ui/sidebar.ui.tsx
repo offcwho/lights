@@ -16,7 +16,7 @@ export const SidebarUi: React.FC<Props> = ({ className }) => {
     return (
         <div className={className}>
             <ul className="p-6">
-                <li className="text-sm tracking-widest mb-6 text-[#55615A]">CATEGORIES</li>
+                <li className="text-sm tracking-widest mb-6 text-[#55615A]">КАТЕГОРИИ</li>
                 <ul className="flex flex-col gap-3 text-[#3C4A42]">
                     {CategoriesData.map((item, index) => (
                         <li

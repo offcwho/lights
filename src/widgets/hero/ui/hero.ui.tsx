@@ -144,7 +144,7 @@ export const HeroUi = () => {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className="inline-block px-4 py-2 bg-[#006C49]/10 text-[#006C49] rounded-full text-sm font-medium"
                         >
-                            ✨ New Collection 2026
+                            ✨ Новая Коллекция 2026
                         </motion.span>
                     </motion.div>
 
@@ -153,14 +153,14 @@ export const HeroUi = () => {
                         variants={textVariants}
                         className="text-6xl font-bold mb-5 text-[#191C1F] leading-tight"
                     >
-                        Sculpted Light for
+                        Свет для
                         <motion.span
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.5, duration: 0.4, type: "spring" }}
                             className="text-[#006C49] block"
                         >
-                            Conscious Spaces
+                            сознательных пространств
                         </motion.span>
                     </motion.h1>
 
@@ -169,8 +169,8 @@ export const HeroUi = () => {
                         variants={textVariants}
                         className="text-lg text-[#3C4A42] leading-relaxed max-w-xl"
                     >
-                        Experience the intersection of architectural form and sustainable craft.
-                        Our latest lighting collection brings organic warmth to your modern home.
+                        Откройте пересечение архитектурной формы и устойчивого мастерства.
+                        Наша последняя коллекция светильников приносит органичное тепло в ваш современный дом.
                     </motion.p>
 
                     {/* Кнопки */}
@@ -185,7 +185,7 @@ export const HeroUi = () => {
                                 whileHover={{ x: "100%" }}
                                 transition={{ duration: 0.5 }}
                             />
-                            <span className="relative">Shop New Arrivals</span>
+                            <span className="relative">Купить новые поступления</span>
                         </Button.primary>
 
                         <Button.ghost delay={0.3} className="relative overflow-hidden group">
@@ -196,7 +196,7 @@ export const HeroUi = () => {
                                 transition={{ duration: 0.3 }}
                             />
                             <span className="relative flex items-center gap-2">
-                                View Lookbook
+                                Посмотреть каталог
                                 <motion.span
                                     animate={{ x: 0 }}
                                     whileHover={{ x: 5 }}
@@ -220,7 +220,7 @@ export const HeroUi = () => {
                             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
                             className="flex flex-col items-center gap-2 text-[#3C4A42] text-sm"
                         >
-                            <span>Scroll to explore</span>
+                            <span>Прокрутите, чтобы исследовать</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                 <motion.path
                                     d="M12 5V19M12 19L5 12M12 19L19 12"

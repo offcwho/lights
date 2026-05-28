@@ -2,53 +2,53 @@ import { ProductType } from "./product.type";
 
 export const data: ProductType = {
     name: "Aura Pendant",
-    cost: "$245.00",
+    cost: "245.00 ₽",
     images: [
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501622425777999872/17.png?ex=69fcbe5d&is=69fb6cdd&hm=4df6e88677e94200dc7447748a4982d2a33804bc0c8ed819e44727ea2f292b3d",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            image: "https://cdn.discordapp.com/attachments/1462503331329999000/1501260772112601210/image.png?ex=69fb6d8c&is=69fa1c0c&hm=b75fc9126c5e967a46c1259939d7c119b850c837c2deec30f6748b2fe0881e24&=&format=webp&quality=lossless&width=1522&height=856",
+            image: "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
     ],
-    description: "The Aura Pendant represents the pinnacle of organic minimalism. Hand-blown emerald glass meets precision-engineered brass hardware to create a lighting fixture that is both a source of illumination and a sculptural statement piece.",
+    description: "Светильник Aura Pendant представляет собой вершину органического минимализма. Ручной выдув изумрудного стекла встречается с прецизионно спроектированной латунной фурнитурой, создавая светильник, который одновременно является источником света и скульптурным предметом искусства.",
     technical: [
         {
-            name: "Bulb Type",
+            name: "Тип цоколя",
             value: "E26 LED Max 60W",
         },
         {
-            name: "Dimensions",
-            value: `12" x 12" x 14"`,
+            name: "Размеры",
+            value: `30 см x 30 см x 36 см`,
         },
         {
-            name: "Material",
-            value: "Hand-blown Glass, Recycled Brass",
+            name: "Материал",
+            value: "Ручной выдув стекла, переработанная латунь",
         },
         {
-            name: "Cord Length",
-            value: `72" Adjustable Textile Cord`,
+            name: "Длина кабеля",
+            value: `180 см, регулируемый текстильный кабель`,
         },
     ],
     reviews: [

@@ -7,11 +7,11 @@ import { useEffect, useState } from "react";
 
 const navigation = [
     {
-        name: "Home",
+        name: "Главная",
         link: "/",
     },
     {
-        name: "Catalog",
+        name: "Каталог",
         link: "/catalog"
     },
 ];

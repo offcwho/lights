@@ -1,22 +1,22 @@
 export const CategoriesData = [
     {
         id: 1,
-        name: "Pendant Lighting",
+        name: "Подвесные светильники",
         description: "qwegaseaxzczqwrasvzcvrqwsd"
     },
     {
         id: 2,
-        name: "Floor Lamps",
+        name: "Напольные лампы",
         description: "qwegaseaxzczqwrasvzcvrqwsd"
     },
     {
         id: 3,
-        name: "Wall Sconces",
+        name: "Настенные бра",
         description: "qwegaseaxzczqwrasvzcvrqwsd"
     },
     {
         id: 4,
-        name: "Table Lamps",
+        name: "Настольные лампы",
         description: "qwegaseaxzczqwrasvzcvrqwsd"
     },
 ]

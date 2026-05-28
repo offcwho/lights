@@ -4,13 +4,13 @@ import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
 
-const imageUrl = "https://cdn.discordapp.com/attachments/744857052924346419/1501560305635950612/AB6AXuB67n2fEAaUi-0OWFVHnSHKbOjS2H8ZPglPcQ6vc9t7v86m349B1hoqhcrC39TV_1IWnc_AZYSDb3iIuQL6rK6kklXqMCTm6seWGP-QqZXX_CLnHW2AAl-Da_qHMcKAlGiSUkkfKuKqAuBUMFV-lbGKSX-7RLVEN7CBgGYh2HZ9CbvdcsLhQFmVWV7E3phkHdytOlM62yXkF-RyQxcYu735npUEj8J.png?ex=69fc8482&is=69fb3302&hm=eb89cb4d4feb785db1f3a67135434a5277ad0a58296309a9182e7a5118e979af&"
+const imageUrl = "https://images.unsplash.com/photo-1777734582660-e0635eea3bd1?q=80&w=824&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
 const items = [
-    { id: 1, title: "Kitchen & Dining", description: "Elevate your culinary sanctuary.", image: imageUrl },
-    { id: 2, title: "Kitchen & Dining", description: "Elevate your culinary sanctuary.", image: imageUrl },
-    { id: 3, title: "Kitchen & Dining", description: "Elevate your culinary sanctuary.", image: imageUrl },
-    { id: 4, title: "Kitchen & Dining", description: "Elevate your culinary sanctuary.", image: imageUrl },
+    { id: 1, title: "Кухня и столовая", description: "Возвысьте вашу кулинарную святилище.", image: imageUrl },
+    { id: 2, title: "Кухня и столовая", description: "Возвысьте вашу кулинарную святилище.", image: imageUrl },
+    { id: 3, title: "Кухня и столовая", description: "Возвысьте вашу кулинарную святилище.", image: imageUrl },
+    { id: 4, title: "Кухня и столовая", description: "Возвысьте вашу кулинарную святилище.", image: imageUrl },
 ]
 
 const containerVariants = {
@@ -103,7 +103,7 @@ export const ByRoomList = () => {
                                         className="w-full"
                                     >
                                         <motion.p className="text-white/80 text-sm max-h-55 line-clamp-4">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consequatur odio quam, cupiditate error, iste nemo velit perferendis ex laborum delectus rerum temporibus autem dolorum totam odit ullam harum nobis a et vero dolore doloribus animi. Earum sunt quas corporis.
+                                            Превратите свое пространство в уютный уголок с помощью нашей продуманной коллекции светильников. От минималистичного дизайна до классических форм - каждый светильник создан для того, чтобы создать идеальную атмосферу в вашем доме и подчеркнуть его стиль.
                                         </motion.p>
                                     </motion.div>
                                 )}

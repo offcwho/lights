@@ -9,10 +9,10 @@ export const ProductsUi: React.FC<Props> = ({ className }) => {
         <div className={className}>
             <div className="flex justify-between">
                 <span className="text-[#55615A] text-[16px]">
-                    Showing 24 of 63 items
+                    Показано 24 из 63 товаров
                 </span>
                 <div className="">
-                    <span className="text-[#6C7A71] text-[16px]">Sort by:</span>
+                    <span className="text-[#6C7A71] text-[16px]">Сортировать по:</span>
                     <select name="" id="" value="qweqwqw"></select>
                 </div>
             </div>

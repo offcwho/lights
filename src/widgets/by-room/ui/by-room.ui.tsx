@@ -18,7 +18,7 @@ export const ByRoomUi = () => {
                             transition={{ duration: 0.5, ease: "easeOut" }}
                             className="text-4xl font-semibold"
                         >
-                            Shop by Room
+                            Покупайте по комнатам
                         </motion.h2>
 
                         <motion.div

@@ -67,7 +67,7 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                             variants={itemVariants}
                             className="px-3 py-1 bg-[#006C49]/10 text-[#006C49] rounded-full text-sm"
                         >
-                            {"New"}
+                            {"Новое"}
                         </motion.div>
                         <motion.button
                             variants={itemVariants}
@@ -151,14 +151,14 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                             className="flex gap-4 justify-center w-full"
                         >
                             <ShoppingCart className="transition-transform group-hover:rotate-12" />
-                            <span>Add to Cart</span>
+                            <span>Добавить в корзину</span>
                         </Button.primary>
                         <Button.ghost
                             delay={1}
                             className="flex gap-4 justify-center w-full"
                         >
                             <Heart className="transition-colors" />
-                            <span>Add to Wishlist</span>
+                            <span>Добавить в избранное</span>
                         </Button.ghost>
                     </motion.div>
                 </motion.div>

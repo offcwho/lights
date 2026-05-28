@@ -33,7 +33,7 @@ export const TrendsUi = () => {
                                 >
                                     <Flame size={36} />
                                 </motion.div>
-                                Trending Now
+                                Сейчас в тренде
                             </motion.h2>
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export const TrendsUi = () => {
                                 transition={{ duration: 0.5, delay: 0.2 }}
                                 className="text-[16px] text-[#3C4A42]"
                             >
-                                Our community's most-loved luminous pieces.
+                                Самые любимые светильники нашего сообщества.
                             </motion.p>
                         </motion.div>
 
@@ -60,7 +60,7 @@ export const TrendsUi = () => {
                                     whileHover={{ x: -4 }}
                                     transition={{ duration: 0.2 }}
                                 >
-                                    View All Collection
+                                    Посмотреть всю коллекцию
                                 </motion.span>
                                 <motion.div
                                     whileHover={{ x: 4, rotate: 90 }}
