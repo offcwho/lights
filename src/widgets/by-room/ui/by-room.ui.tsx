@@ -8,15 +8,15 @@ export const ByRoomUi = () => {
     return (
         <section>
             <Container>
-                <div className="">
+                <div className="px-2 sm:px-4">
                     {/* Title */}
-                    <div className="flex flex-col mb-12">
+                    <div className="flex flex-col mb-8 sm:mb-12">
                         <motion.h2
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.5 }}
                             transition={{ duration: 0.5, ease: "easeOut" }}
-                            className="text-4xl font-semibold"
+                            className="text-2xl sm:text-3xl md:text-4xl font-semibold"
                         >
                             Покупайте по комнатам
                         </motion.h2>

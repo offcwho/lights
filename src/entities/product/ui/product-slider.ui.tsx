@@ -83,11 +83,11 @@ export const ProductSliderUi: React.FC<Props> = ({ data }) => {
             variants={imageVariants}
             initial="hidden"
             animate="visible"
-            className=""
+            className="w-full"
         >
             {/* изображение */}
             <motion.div
-                className="relative mb-4 h-125 overflow-hidden rounded-2xl bg-gray-100"
+                className="relative mb-2 sm:mb-3 md:mb-4 h-64 sm:h-96 md:h-125 overflow-hidden rounded-xl md:rounded-2xl bg-gray-100"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
@@ -110,7 +110,7 @@ export const ProductSliderUi: React.FC<Props> = ({ data }) => {
                             x: { type: "spring", stiffness: 300, damping: 30 },
                             opacity: { duration: 0.1 }
                         }}
-                        className="w-full h-125 object-cover cursor-grab active:cursor-grabbing"
+                        className="w-full h-64 sm:h-96 md:h-125 object-cover cursor-grab active:cursor-grabbing"
                     />
                 </AnimatePresence>
 
@@ -123,32 +123,34 @@ export const ProductSliderUi: React.FC<Props> = ({ data }) => {
                     >
                         <motion.button
                             onClick={prevSlide}
-                            className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-all"
+                            className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 p-1 sm:p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-all"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             initial={{ x: -50, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 0.5, duration: 0.3 }}
                         >
-                            <ChevronLeft size={24} />
+                            <ChevronLeft size={20} className="sm:block hidden" />
+                            <ChevronLeft size={16} className="sm:hidden block" />
                         </motion.button>
                         <motion.button
                             onClick={nextSlide}
-                            className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-all"
+                            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 p-1 sm:p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-all"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             initial={{ x: 50, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 0.5, duration: 0.3 }}
                         >
-                            <ChevronRight size={24} />
+                            <ChevronRight size={20} className="sm:block hidden" />
+                            <ChevronRight size={16} className="sm:hidden block" />
                         </motion.button>
                     </motion.div>
                 )}
 
                 {/* Индикатор текущего слайда */}
                 <motion.div
-                    className="absolute bottom-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-black/50 rounded-full text-white text-sm"
+                    className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 px-2 sm:px-3 py-1 bg-black/50 rounded-full text-white text-xs sm:text-sm"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.3 }}
@@ -167,7 +169,7 @@ export const ProductSliderUi: React.FC<Props> = ({ data }) => {
                 >
                     <motion.div
                         ref={containerRef}
-                        className="flex gap-3 pb-4 cursor-grab active:cursor-grabbing p-2"
+                        className="flex gap-2 sm:gap-3 pb-3 sm:pb-4 cursor-grab active:cursor-grabbing p-1 sm:p-2"
                         drag="x"
                         dragElastic={0.1}
                         dragMomentum={true}
@@ -192,7 +194,7 @@ export const ProductSliderUi: React.FC<Props> = ({ data }) => {
                                 <img
                                     src={image}
                                     alt={`Thumbnail ${index + 1}`}
-                                    className="w-20 h-20 object-cover select-none pointer-events-none"
+                                    className="w-16 sm:w-20 h-16 sm:h-20 object-cover select-none pointer-events-none"
                                     draggable={false}
                                 />
                             </motion.button>

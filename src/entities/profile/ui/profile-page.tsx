@@ -125,15 +125,15 @@ const Icons = {
 // ---------- КОМПОНЕНТ ПОСЛЕДНИХ ПОКУПОК ----------
 const RecentPurchases: React.FC<{ purchases: PurchaseItem[] }> = ({ purchases }) => {
     return (
-        <div className="bg-white  rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-            <div className="px-6 py-5 border-b border-gray-100flex justify-between items-center">
+        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+            <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-gray-100 flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     <div className="p-2 bg-emerald-50 rounded-xl">
                         <Icons.Bag />
                     </div>
-                    <h2 className="text-lg font-semibold text-gray-900 ">Последние покупки</h2>
+                    <h2 className="text-base sm:text-lg font-semibold text-gray-900 ">Последние покупки</h2>
                 </div>
-                <button className="text-sm text-emerald-600  hover:text-emerald-700 font-medium flex items-center gap-1">
+                <button className="text-xs sm:text-sm text-emerald-600  hover:text-emerald-700 font-medium flex items-center gap-1">
                     Все заказы <Icons.ChevronRight />
                 </button>
             </div>
@@ -141,31 +141,31 @@ const RecentPurchases: React.FC<{ purchases: PurchaseItem[] }> = ({ purchases })
                 {purchases.map((item) => {
                     const status = getStatusConfig(item.status);
                     return (
-                        <div key={item.id} className="px-6 py-4 hover:bg-gray-50 transition-colors">
-                            <div className="flex gap-4">
+                        <div key={item.id} className="px-4 sm:px-6 py-3 sm:py-4 hover:bg-gray-50 transition-colors">
+                            <div className="flex gap-3 sm:gap-4 flex-col sm:flex-row">
                                 <img
                                     src={item.image}
                                     alt={item.name}
-                                    className="w-16 h-16 rounded-xl object-cover shadow-sm"
+                                    className="w-full sm:w-16 h-32 sm:h-16 rounded-xl object-cover shadow-sm"
                                 />
                                 <div className="flex-1 min-w-0">
-                                    <div className="flex flex-wrap justify-between items-start gap-2">
-                                        <div>
-                                            <h3 className="font-medium text-gray-900  truncate">{item.name}</h3>
-                                            <div className="flex items-center gap-3 mt-1">
-                                                <span className="text-sm font-semibold text-gray-900 ">
+                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+                                        <div className="min-w-0">
+                                            <h3 className="font-medium text-gray-900  truncate text-sm sm:text-base">{item.name}</h3>
+                                            <div className="flex items-center gap-3 mt-1 flex-wrap">
+                                                <span className="text-xs sm:text-sm font-semibold text-gray-900 ">
                                                     {item.price.toLocaleString('ru-RU')} ₽
                                                 </span>
                                                 <span className="text-xs text-gray-400">•</span>
                                                 <span className="text-xs text-gray-500">{formatDate(item.date)}</span>
                                             </div>
                                         </div>
-                                        <div className="flex items-center gap-2">
-                                            <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full ${status.bg}`}>
+                                        <div className="flex items-center gap-2 flex-wrap">
+                                            <div className={`flex items-center gap-1.5 px-2 sm:px-2.5 py-1 rounded-full ${status.bg}`}>
                                                 <span className={`w-1.5 h-1.5 rounded-full ${status.dot}`}></span>
                                                 <span className={`text-xs font-medium ${status.color}`}>{status.text}</span>
                                             </div>
-                                            <button className="text-sm text-gray-500 hover:text-emerald-600 transition-colors">
+                                            <button className="text-xs sm:text-sm text-gray-500 hover:text-emerald-600 transition-colors">
                                                 Повторить
                                             </button>
                                         </div>
@@ -188,18 +188,18 @@ const SettingsPanel: React.FC<{
 }> = ({ settings, onUpdate, onSave }) => {
     return (
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-            <div className="px-6 py-5 border-b border-gray-100 ">
+            <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-gray-100 ">
                 <div className="flex items-center gap-2">
                     <div className="p-2 bg-emerald-50  rounded-xl">
                         <Icons.Settings />
                     </div>
-                    <h2 className="text-lg font-semibold text-gray-900">Настройки профиля</h2>
+                    <h2 className="text-base sm:text-lg font-semibold text-gray-900">Настройки профиля</h2>
                 </div>
             </div>
-            <div className="p-6 space-y-5">
+            <div className="p-4 sm:p-6 space-y-4 sm:space-y-5">
                 {/* Имя */}
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Имя и фамилия</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1.5">Имя и фамилия</label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <Icons.User />
@@ -208,14 +208,14 @@ const SettingsPanel: React.FC<{
                             type="text"
                             value={settings.name}
                             onChange={(e) => onUpdate('name', e.target.value)}
-                            className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200  bg-white text-gray-900  focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+                            className="w-full pl-10 pr-4 py-2 sm:py-2.5 rounded-xl border border-gray-200  bg-white text-gray-900 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
                         />
                     </div>
                 </div>
 
                 {/* Email */}
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Email</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1.5">Email</label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <Icons.Mail />
@@ -224,14 +224,14 @@ const SettingsPanel: React.FC<{
                             type="email"
                             value={settings.email}
                             onChange={(e) => onUpdate('email', e.target.value)}
-                            className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200  bg-white  text-gray-900  focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+                            className="w-full pl-10 pr-4 py-2 sm:py-2.5 rounded-xl border border-gray-200  bg-white  text-gray-900 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
                         />
                     </div>
                 </div>
 
                 {/* Телефон */}
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Телефон</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1.5">Телефон</label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <Icons.Phone />
@@ -241,14 +241,14 @@ const SettingsPanel: React.FC<{
                             value={settings.phone}
                             onChange={(e) => onUpdate('phone', e.target.value)}
                             placeholder="+7 (999) 123-45-67"
-                            className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+                            className="w-full pl-10 pr-4 py-2 sm:py-2.5 rounded-xl border border-gray-200 bg-white text-gray-900 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
                         />
                     </div>
                 </div>
 
                 {/* Язык */}
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Язык</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1.5">Язык</label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <Icons.Globe />
@@ -256,7 +256,7 @@ const SettingsPanel: React.FC<{
                         <select
                             value={settings.language}
                             onChange={(e) => onUpdate('language', e.target.value as 'ru' | 'en')}
-                            className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none appearance-none cursor-pointer"
+                            className="w-full pl-10 pr-10 py-2 sm:py-2.5 rounded-xl border border-gray-200 bg-white text-gray-900 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none appearance-none cursor-pointer"
                         >
                             <option value="ru">🇷🇺 Русский</option>
                             <option value="en">🇬🇧 English</option>
@@ -274,7 +274,7 @@ const SettingsPanel: React.FC<{
                     <div className="flex items-center justify-between py-2">
                         <div className="flex items-center gap-2">
                             <Icons.Bell />
-                            <span className="text-sm text-gray-700">Подписка на новинки и акции</span>
+                            <span className="text-xs sm:text-sm text-gray-700">Подписка на новинки и акции</span>
                         </div>
                         <button
                             onClick={() => onUpdate('newsletter', !settings.newsletter)}
@@ -292,13 +292,13 @@ const SettingsPanel: React.FC<{
                 {/* Кнопка сохранения */}
                 <button
                     onClick={onSave}
-                    className="w-full mt-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
+                    className="w-full mt-3 sm:mt-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 sm:py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md text-sm"
                 >
                     Сохранить изменения
                 </button>
 
                 {/* Кнопка выхода */}
-                <button className="w-full mt-2 text-red-600 hover:text-red-700 text-sm font-medium py-2 flex items-center justify-center gap-2 transition-colors">
+                <button className="w-full mt-2 text-red-600 hover:text-red-700 text-xs sm:text-sm font-medium py-2 flex items-center justify-center gap-2 transition-colors">
                     <Icons.Logout />
                     Выйти из аккаунта
                 </button>
@@ -354,11 +354,11 @@ const UserProfile: React.FC = () => {
     return (
         <Container>
             <div className="font-sans transition-colors">
-                <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+                <div className="max-w-6xl mx-auto px-2 sm:px-4 py-6 sm:py-8 md:py-12">
                     {/* Header с карточкой пользователя */}
-                    <div className="mb-8">
-                        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8">
-                            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div className="mb-6 sm:mb-8">
+                        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-4 sm:p-6 md:p-8">
+                            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6">
                                 <div className="flex items-center gap-5">
                                     <div className="relative">
                                         <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-2xl flex items-center justify-center shadow-lg">
@@ -390,13 +390,13 @@ const UserProfile: React.FC = () => {
                     </div>
 
                     {/* Grid: Покупки + Настройки */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                         <RecentPurchases purchases={purchases} />
                         <SettingsPanel settings={settings} onUpdate={handleSettingsUpdate} onSave={handleSaveSettings} />
                     </div>
 
                     {/* Футер */}
-                    <div className="mt-8 text-center text-sm text-gray-400">
+                    <div className="mt-6 sm:mt-8 text-center text-xs sm:text-sm text-gray-400">
                         <p>© 2025 LUMEN — световые решения для вашего дома</p>
                     </div>
                 </div>

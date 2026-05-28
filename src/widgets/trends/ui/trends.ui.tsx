@@ -9,8 +9,8 @@ export const TrendsUi = () => {
     return (
         <section>
             <Container>
-                <div className="">
-                    <div className="flex justify-between items-end mb-12">
+                <div className="px-2 sm:px-4">
+                    <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -23,7 +23,7 @@ export const TrendsUi = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.5, delay: 0.1 }}
-                                className="text-4xl text-[#191C1F] mb-2 flex gap-2"
+                                className="text-2xl sm:text-3xl md:text-4xl text-[#191C1F] mb-2 flex gap-2"
                             >
                                 <motion.div
                                     initial={{ opacity: 0, color: "#000000" }}
@@ -40,7 +40,7 @@ export const TrendsUi = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
-                                className="text-[16px] text-[#3C4A42]"
+                                className="text-sm sm:text-base md:text-[16px] text-[#3C4A42]"
                             >
                                 Самые любимые светильники нашего сообщества.
                             </motion.p>
@@ -54,7 +54,7 @@ export const TrendsUi = () => {
                         >
                             <Link
                                 href={''}
-                                className="flex gap-2 items-center text-[#006C49] border-b border-transparent group transition-all duration-300 relative"
+                                className="flex gap-2 items-center text-[#006C49] border-b border-transparent group transition-all duration-300 relative text-sm sm:text-base md:text-base hover:border-[#006C49]"
                             >
                                 <motion.span
                                     whileHover={{ x: -4 }}

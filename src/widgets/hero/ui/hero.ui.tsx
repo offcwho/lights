@@ -90,7 +90,7 @@ export const HeroUi = () => {
             style={{
                 height: `calc(100vh - ${headerHeight}px)`
             }}
-            className="relative overflow-hidden"
+            className="relative overflow-hidden min-h-screen"
         >
             {/* Фоновое изображение */}
             <div className="absolute z-0 h-full w-full">
@@ -151,7 +151,7 @@ export const HeroUi = () => {
                     {/* Заголовок */}
                     <motion.h1
                         variants={textVariants}
-                        className="text-6xl font-bold mb-5 text-[#191C1F] leading-tight"
+                        className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-5 text-[#191C1F] leading-tight"
                     >
                         Свет для
                         <motion.span
@@ -167,7 +167,7 @@ export const HeroUi = () => {
                     {/* Описание */}
                     <motion.p
                         variants={textVariants}
-                        className="text-lg text-[#3C4A42] leading-relaxed max-w-xl"
+                        className="text-sm sm:text-base md:text-lg text-[#3C4A42] leading-relaxed max-w-xl"
                     >
                         Откройте пересечение архитектурной формы и устойчивого мастерства.
                         Наша последняя коллекция светильников приносит органичное тепло в ваш современный дом.
@@ -176,7 +176,7 @@ export const HeroUi = () => {
                     {/* Кнопки */}
                     <motion.div
                         variants={textVariants}
-                        className="mt-10 flex gap-6"
+                        className="mt-6 sm:mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6"
                     >
                         <Button.primary delay={0} className="relative overflow-hidden group">
                             <motion.span

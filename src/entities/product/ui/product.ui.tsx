@@ -54,7 +54,7 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="grid grid-cols-2 gap-20"
+                className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 md:gap-20"
             >
                 {/* Левая колонка - изображение */}
                 <ProductSlider data={data} />
@@ -92,16 +92,16 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                     </motion.div>
 
                     {/* Заголовок и цена */}
-                    <motion.div variants={itemVariants} className="mt-4">
+                    <motion.div variants={itemVariants} className="mt-3 sm:mt-4 md:mt-4">
                         <motion.h2
                             variants={itemVariants}
-                            className="text-5xl text-[#191C1F] mb-2 capitalize"
+                            className="text-2xl sm:text-3xl md:text-5xl text-[#191C1F] mb-2 capitalize"
                         >
                             {data.name}
                         </motion.h2>
                         <motion.span
                             variants={itemVariants}
-                            className="text-[#006C49] text-2xl font-semibold"
+                            className="text-[#006C49] text-lg sm:text-xl md:text-2xl font-semibold"
                         >
                             {data.cost}
                         </motion.span>
@@ -110,7 +110,7 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                     {/* Описание */}
                     <motion.p
                         variants={itemVariants}
-                        className="py-12 text-[#3C4A42] text-lg leading-relaxed"
+                        className="py-6 sm:py-8 md:py-12 text-sm sm:text-base md:text-lg text-[#3C4A42] leading-relaxed"
                     >
                         {data.description}
                     </motion.p>
@@ -118,11 +118,11 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                     {/* Технические характеристики */}
                     <motion.ul
                         variants={itemVariants}
-                        className="py-6 border-t border-b border-[#BBCABF] text-[#191C1f]"
+                        className="py-4 sm:py-5 md:py-6 border-t border-b border-[#BBCABF] text-[#191C1f]"
                     >
                         <motion.li
                             variants={itemVariants}
-                            className="text-[16px] font-semibold mb-6"
+                            className="text-sm sm:text-base md:text-[16px] font-semibold mb-4 sm:mb-5 md:mb-6"
                         >
                             Технические характеристики
                         </motion.li>
@@ -132,7 +132,7 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                                     key={index}
                                     variants={itemVariants}
                                     custom={index}
-                                    className="flex justify-between mb-3 text-[16px]"
+                                    className="flex justify-between mb-2 sm:mb-3 text-sm sm:text-base md:text-[16px]"
                                 >
                                     <span className="font-semibold">{item.name}</span>
                                     <span className="text-[#3C4A42]">{item.value}</span>
@@ -144,7 +144,7 @@ export const ProductUi: React.FC<Props> = ({ slug }) => {
                     {/* Кнопки */}
                     <motion.div
                         variants={itemVariants}
-                        className="flex flex-col gap-3 py-12"
+                        className="flex flex-col gap-2 sm:gap-3 py-6 sm:py-8 md:py-12"
                     >
                         <Button.primary
                             delay={0.6}

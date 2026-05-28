@@ -43,10 +43,10 @@ export const ByRoomList = () => {
 
     const getPos = (index: number) => {
         switch (index) {
-            case 0: return "col-span-2 row-span-2";
-            case 1: return "col-span-2 col-start-3";
-            case 2: return "col-start-3 row-start-2";
-            case 3: return "col-start-4 row-start-2";
+            case 0: return "col-span-2 md:row-span-2 sm:col-span-1";
+            case 1: return "col-span-2 md:col-start-3 sm:col-span-1";
+            case 2: return "md:col-start-3 md:row-start-2 sm:col-span-1";
+            case 3: return "md:col-start-4 md:row-start-2 sm:col-span-1";
             default: return "";
         }
     };
@@ -57,7 +57,7 @@ export const ByRoomList = () => {
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="grid grid-cols-4 grid-rows-2 gap-6 max-h-150"
+            className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 grid-rows-2 gap-2 sm:gap-4 md:gap-6 max-h-150"
         >
             {items.map((item, index) => (
                 <motion.li
@@ -91,7 +91,7 @@ export const ByRoomList = () => {
                         />
 
 
-                        <div className="absolute inset-0 flex flex-col justify-between p-8">
+                        <div className="absolute inset-0 flex flex-col justify-between p-3 sm:p-4 md:p-8">
                             <AnimatePresence mode="wait">
                                 {isHover === index && (
                                     <motion.div
@@ -102,7 +102,7 @@ export const ByRoomList = () => {
                                         transition={{ duration: 0.2 }}
                                         className="w-full"
                                     >
-                                        <motion.p className="text-white/80 text-sm max-h-55 line-clamp-4">
+                                        <motion.p className="text-white/80 text-xs sm:text-sm md:text-base max-h-55 line-clamp-4">
                                             Превратите свое пространство в уютный уголок с помощью нашей продуманной коллекции светильников. От минималистичного дизайна до классических форм - каждый светильник создан для того, чтобы создать идеальную атмосферу в вашем доме и подчеркнуть его стиль.
                                         </motion.p>
                                     </motion.div>
@@ -114,7 +114,7 @@ export const ByRoomList = () => {
                                     layout
                                     transition={{ duration: 0.4 }}
                                 >
-                                    <h3 className="text-white text-2xl mb-2">{item.title}</h3>
+                                    <h3 className="text-white text-lg sm:text-xl md:text-2xl mb-2">{item.title}</h3>
                                     <AnimatePresence mode="wait">
                                         {isHover !== index ? (
                                             <motion.p
@@ -123,7 +123,7 @@ export const ByRoomList = () => {
                                                 animate={{ opacity: 1, y: 0 }}
                                                 exit={{ opacity: 0, y: 10 }}
                                                 transition={{ duration: 0.2 }}
-                                                className="text-white/60 text-sm"
+                                                className="text-white/60 text-xs sm:text-sm md:text-base"
                                             >
                                                 {item.description}
                                             </motion.p>
@@ -134,7 +134,7 @@ export const ByRoomList = () => {
                                                 animate={{ opacity: 1, y: 0 }}
                                                 exit={{ opacity: 0, y: 10 }}
                                                 transition={{ duration: 0.2 }}
-                                                className="text-white/80 text-sm"
+                                                className="text-white/80 text-xs sm:text-sm md:text-base"
                                             >
                                                 {item.description}
                                             </motion.p>

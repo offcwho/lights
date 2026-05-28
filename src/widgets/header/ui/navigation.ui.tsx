@@ -59,7 +59,7 @@ export const Navigation = () => {
         }
     })
     return (
-        <menu className="flex gap-8">
+        <menu className="flex gap-4 sm:gap-6 md:gap-8">
             {navigation.map((item, index) => (
                 <motion.li
                     key={index}
@@ -72,7 +72,7 @@ export const Navigation = () => {
                 >
                     <Link
                         href={item.link}
-                        className={`py-1.5 inline-block relative hover:text-[#059669] transition-colors duration-300 ${active === index || url === item.link || url === "/undefined" && item.link === "/" ? 'text-[#059669]' : 'text-[#475569]'}`}
+                        className={`py-1.5 inline-block relative hover:text-[#059669] transition-colors duration-300 text-xs sm:text-sm md:text-base ${active === index || url === item.link || url === "/undefined" && item.link === "/" ? 'text-[#059669]' : 'text-[#475569]'}`}
                     >
                         {item.name}
                     </Link>

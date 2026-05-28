@@ -136,14 +136,14 @@ export const CartUi = () => {
                     variants={headerVariants}
                     initial="hidden"
                     animate="visible"
-                    className="text-5xl mb-12 font-bold text-[#191C1F]"
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 sm:mb-8 md:mb-12 font-bold text-[#191C1F]"
                 >
                     Ваша корзина
                 </motion.h1>
 
-                <div className="grid grid-cols-6 gap-8">
-                    <div className="col-span-4">
-                        <div className="py-4 px-5 mb-3 border border-[#E0E2E6] shadow rounded-xl flex justify-between">
+                <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-8">
+                    <div className="col-span-1 md:col-span-4">
+                        <div className="py-3 sm:py-4 px-3 sm:px-5 mb-3 border border-[#E0E2E6] shadow rounded-xl flex flex-col sm:flex-row sm:justify-between gap-3">
                             <div className="flex gap-3">
                                 <Checkbox
                                     label="Выбрать все"
@@ -202,35 +202,35 @@ export const CartUi = () => {
                         variants={sidebarVariants}
                         initial="hidden"
                         animate="visible"
-                        className="col-span-2 "
+                        className="col-span-1 md:col-span-2 "
                     >
                         <motion.div
-                            className="rounded-xl bg-[#F2F4F8] p-8 h-fit sticky top-0"
+                            className="rounded-xl bg-[#F2F4F8] p-4 sm:p-6 md:p-8 h-fit sticky top-0"
                             whileHover={{
                                 boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
                                 transition: { duration: 0.2 }
                             }}
                         >
-                            <motion.h3 className="text-4xl font-semibold text-[#191C1F]">
+                            <motion.h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#191C1F]">
                                 Итого
                             </motion.h3>
-                            <motion.ul className="text-[#3C4A42] flex flex-col gap-2 py-4 border-b border-[#E0E2E6]">
-                                <motion.li className="flex justify-between">
+                            <motion.ul className="text-[#3C4A42] flex flex-col gap-2 py-3 sm:py-4 border-b border-[#E0E2E6]">
+                                <motion.li className="flex justify-between text-xs sm:text-sm md:text-base">
                                     <span>Товары ({count || 0})</span>
                                     <motion.span>
                                         {cartValue} ₽
                                     </motion.span>
                                 </motion.li>
-                                <motion.li className="flex justify-between">
+                                <motion.li className="flex justify-between text-xs sm:text-sm md:text-base">
                                     <span>Скидка</span>
                                     <span className="text-[#006C49]">- 0 ₽</span>
                                 </motion.li>
-                                <motion.li className="flex justify-between">
+                                <motion.li className="flex justify-between text-xs sm:text-sm md:text-base">
                                     <span>Доставка</span>
                                     <span>Бесплатно</span>
                                 </motion.li>
                             </motion.ul>
-                            <motion.div className="flex justify-between text-2xl font-semibold mt-4">
+                            <motion.div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 text-lg sm:text-xl md:text-2xl font-semibold mt-3 sm:mt-4 md:mt-4">
                                 <h5>К оплате</h5>
                                 <span className="text-[#006C49]">{cartValue} ₽</span>
                             </motion.div>

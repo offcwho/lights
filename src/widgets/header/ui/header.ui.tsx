@@ -5,23 +5,25 @@ import Link from "next/link";
 
 export const HeaderUi = () => {
     return (
-        <header className="py-6 shadow-[0_2px_0_0_#00000015] z-9999 sticky top-0 bg-white">
+        <header className="py-3 sm:py-4 md:py-6 shadow-[0_2px_0_0_#00000015] z-9999 sticky top-0 bg-white">
             <Container className="py-0!">
                 <div className="">
                     {/* Logo */}
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                     <Navigation />
                     <div className="">
                         {/* This search */}
                     </div>
-                    <div className="flex gap-2">
+                    <div className="flex gap-1 sm:gap-2">
                         {/* Change next time */}
-                        <Link href={'/cart'} className="p-2">
-                            <ShoppingCart size={20} color="#3C4A42" />
+                        <Link href={'/cart'} className="p-1 sm:p-2">
+                            <ShoppingCart size={18} className="sm:block hidden" color="#3C4A42" />
+                            <ShoppingCart size={16} className="sm:hidden block" color="#3C4A42" />
                         </Link>
-                        <Link href={'/profile'} className="p-2">
-                            <UserRound size={20} color="#3C4A42" />
+                        <Link href={'/profile'} className="p-1 sm:p-2">
+                            <UserRound size={18} className="sm:block hidden" color="#3C4A42" />
+                            <UserRound size={16} className="sm:hidden block" color="#3C4A42" />
                         </Link>
                     </div>
                 </div>
